@@ -7,7 +7,6 @@
 - Note: LAPD is having issues posting crime data, so update time was changed to bi-weekly
 - Documentation on data source, extraction logic, and justification
 - Lambda function was used for extraction and a data sample is provided.
-
 - The data we are using comes from the L.A. Crime Data Analysis. It features crime
 data in Los Angeles and additional details relating to the crime (location, weapons, etc).
 We plan to extract the data from the provided API: https://data.lacity.org/resource/2nrs-mtv8.json
@@ -23,13 +22,9 @@ of creating a pipeline on AWS
 - Record ID was added to keep track of Division of Records Number across tables
 - Duplicates and Null Values were dropped
 - ETL Job script was used in AWS Glue for splitting the tables in the datalake
-- 
 - For readabilty and later analysis, the semi-structured data will be cleaned and transformed. This
 process will be done in the scheduled Lambda function which will fetch the data from the API and
 after cleaning for any dupliates, null, outliers, etc, it will be then transferred to the s3 bucket.
- 
-- Transformation code along with data samples pre and
-post-transformation.
      # Remove unwanted spaces from location
         entry['location'] = re.sub(r'\s+', ' ', entry.get('location', ''))
         """I used a 're' library to replace consecutive spaces"""
