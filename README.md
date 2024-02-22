@@ -1,4 +1,4 @@
-# [L.A Crime Data Analysis](http://34.233.135.176/)
+# [L.A Crime Data Analysis](http://34.233.135.176/) - View the live site
 ## JUMP Capstone
 
 ### Data Extraction
