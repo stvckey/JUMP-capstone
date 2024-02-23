@@ -1,4 +1,4 @@
-# [L.A Crime Data Analysis](http://34.233.135.176/) - View the live site
+# [L.A Crime Data Analysis](https://stvckey.github.io/JUMP-capstone/) - View the live site
 
 ## Data Extraction
 - Source: https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data
